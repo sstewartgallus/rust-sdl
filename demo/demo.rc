@@ -1,9 +1,0 @@
-extern mod sdl;
-
-mod video;
-
-fn main() {
-	#[main];
-
-	video::main();
-}

@@ -1,4 +1,4 @@
-#[link(name = "sdl",
+#[link(name = "rust-sdl",
        vers = "0.3.0",
        uuid = "0ce89b41-2f92-459e-bbc1-8f5fe32f16cf",
        url = "http://github.com/brson/rust-sdl")];
