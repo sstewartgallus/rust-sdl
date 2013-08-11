@@ -30,7 +30,7 @@ else
 SDLXMAIN=
 endif
 
-libsdl.dummy: src/sdl.rc $(RUST_SRC) $(SDLXMAIN)
+libsdl.dummy: src/lib.rs $(RUST_SRC) $(SDLXMAIN)
 	$(RUSTC) $(RUSTFLAGS) $< -o $@
 	touch $@
 
