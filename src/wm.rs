@@ -34,8 +34,8 @@ pub enum GrabMode {
 }
 
 pub fn set_caption(title: &str, icon: &str) {
-	do title.as_c_str |title_buf| {
-		do icon.as_c_str |icon_buf| {
+	do title.to_c_str().with_ref |title_buf| {
+		do icon.to_c_str().with_ref |icon_buf| {
 			unsafe { ll::SDL_WM_SetCaption(title_buf, icon_buf); }
 		}
 	}
